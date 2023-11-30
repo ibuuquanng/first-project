@@ -1,5 +1,9 @@
 /* TABLET AND MOBILE */
 @media (max-width: 1023px) {
+    .protect__item {
+        display: flex;
+    }
+    
     .hide-on-mobile-tablet {
         display: none;
     }
@@ -70,6 +74,10 @@
 
     .header__section {
         margin-top: -150px;
+    }
+
+    .protect__item {
+        display: flex;
     }
 
     .protect__item:nth-child(2) {
