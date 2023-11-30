@@ -1,0 +1,664 @@
+* {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif ;
+    position: relative;
+}
+
+/* BẮT ĐẦU HEADER */
+.header {
+    width: 100%;    
+    height: 120px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.header__logo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header__search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__search input {
+    width: 400px;
+    height: 40px;
+    background-color: #292929;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    color: #ededed;
+    padding-left: 10px;
+}
+
+::placeholder {
+    color: rgb(193, 191, 191);
+}
+
+.header__search button {
+    height: 40px;
+    padding: 10px 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    margin-left: -40px;
+}
+
+.header__search button i {
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.header__section {
+    margin: auto;
+}
+
+.header__section-login,
+.header__section-check {
+    margin: auto;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.header__section-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.header__section-cart span {
+    font-size: 20px;
+    margin: 10px;
+}
+
+.header__section-check:hover {
+    opacity: .8;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.header__section-check p {
+    background-color: #ffbe0c;
+    padding: 10px 0;
+    border-radius: 2px;
+}
+
+
+/* KẾT THÚC HEADER */
+
+/* BẮT ĐẦU NAVBAR */
+.navbar {
+    width: 100%;    
+    height: 80px;
+    background-color: #ffbe0c;
+    color: black;
+    text-align: center;
+}
+
+.navbar__list {
+    display: flex;
+    margin: 0;
+}
+
+.navbar__list li {
+    height: 100%;
+    position: relative;
+}
+
+.navbar__list li::before {
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    background-color: #292929;
+}
+
+.navbar__list li:hover {
+    background-color: #292929;
+    color: #ffbe0c;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navbar__list li i {
+    margin-top: 16px;
+    font-size: 18px;
+}
+
+.navbar__list li p {
+    margin: 8px 0;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+/* KẾT THÚC NAVBAR */
+
+/* BẮT ĐẦU BANNER */
+.banner {
+    height: 600px;
+}
+
+.banner img {
+    height: 100%;
+    width: 100%;
+}
+/* KẾT THÚC BANNER */
+
+/* BẮT ĐẦU PROTECT */
+.protect__item {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border-left: .1px dashed black;
+    border-bottom: .1px dashed black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.protect__item:last-child {
+    border-right: .1px dashed black;
+
+}
+
+.protect__item div {
+    margin-left: 20px;
+}
+
+.protect__item div h4 {
+    font-size: 14px;
+    font-size: 100;
+}
+
+.protect__item div p {
+    font-size: 12px;
+    font-size: 100;
+}
+
+/* KẾT THÚC PROTECT */
+
+/* BẮT ĐẦU MAIN */
+.main__menu {
+    width: 100%;
+    display: flex;
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+    border-bottom: .5px solid;
+}
+
+.main__menu li {
+    width: 120px;
+    list-style: none;
+    padding: 14px 10px;
+    text-align: center;
+}
+
+.main__menu li:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #ffbe0c;
+}
+
+.main__item {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+}
+
+.main__item-content {
+    box-shadow: 0px 3px 3px 3px #ededed;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.main__item-content:hover {
+    transform: scale(1.02);
+    transition: 0.3s;
+}
+
+.main__item-content span img {
+    width: 100%;
+    border-radius: 4px 4px 0 0;
+}
+
+.main__item-content span img:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.main__item-content span h4 {
+    font-size: 14px;
+    margin: 0;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.main__item-content span h4:hover {
+    transform: scale(1.02);
+    transition: 0.3s;
+}
+
+.main__item-content span h5 {
+    font-size: 12px;
+    padding-bottom: 6px 0;
+    color: red;
+    margin: 0;
+}
+
+.main__item-content span p {
+    font-size: 12px;
+    color: #292929;
+    margin: 0;
+    padding-bottom: 4px;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+}
+
+.page div {
+    background-color: #ffbe0c;
+    font-size: 12px;
+    border-radius: 4px;
+    padding: 10px 15px;
+    margin: 20px;
+}
+
+.page div:hover {
+    opacity: 0.8;
+    transform: scale(1.02);
+    cursor: pointer; transition: 0.3s;
+}
+
+/* KÉT THÚC MAIN */
+
+/* GO ON TOP */
+.goon__top i {
+    position: absolute;
+    font-size: 20px;
+    right: 30px;
+    bottom: 30px;
+    padding: 10px 14px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #515151;
+    border-radius: 50%;
+}
+
+.goon__top i:hover {
+    cursor: pointer;
+    color: rgb(209, 209, 209);
+    background-color: #8a8a8a;
+}
+/* GO ON TOP */
+
+/* BẮT ĐẦU FOOTER */
+.footer {
+    background-color: #292929;
+}
+
+.footer__content div {
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__content div img {
+    width: 80%;
+}
+
+.footer__content span img {
+    margin-top: 20px;
+    width: 80%;
+}
+
+.footer__content div a,
+.footer__content div span {
+    color: rgb(144, 144, 144);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 1;
+    margin-bottom: 20px;
+}
+
+.footer__content div a:hover,
+.footer__content div span:hover {
+    transform: translateX(2px);
+    transition: 0.3s;
+    cursor: pointer;
+    color: #ffbe0c;
+}
+
+.footer__content div i {
+    margin-right: 4px;
+}
+
+.footer__content div h1 {
+    color: rgb(144, 144, 144);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 1;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* KẾT THÚC FOOTER */
+
+/* BẮT ĐẦU PHẦN CARD */
+.heading__card {
+    width: 100%;
+    margin: 20px 24px 0 24px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: .1px solid #8a8a8a;
+}
+
+.heading__card span {
+    font-size: 12px;
+    color: #8a8a8a;
+}
+
+.heading__card span:hover {
+    cursor: pointer;
+}
+
+.heading__card p {
+    color: #c8c8c8;
+    margin: 0 10px;
+}
+
+.main__card {
+    display: flex;
+    margin: 20px 0;
+}
+
+.card__img img {
+    width: 100%;
+}
+
+.card__info-name {
+    font-size: 20px;
+    color: #515151;
+}
+
+.card__info-price {
+    font-size: 20px;
+    color: red;
+}
+
+.card__info-content {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    font-weight: 100;
+    color: #8a8a8a;
+    margin: 20px 0;
+}
+
+.card__info-content span {
+    border-bottom: 0.1px solid #8a8a8a;
+    padding: 10px 0;
+    padding-left: 20px;
+}
+
+.card__info-size {
+    padding: 20px 0;
+    cursor: pointer;
+}
+
+.card__info-size span {
+    font-size: 12px;
+    padding: 10px;
+    border: .1px solid #8a8a8a;
+    color: #8a8a8a;
+}
+
+.card__info-quantity {
+    display: flex;
+}
+
+.card__info-quantity input {
+    width: 40px;
+    height: 37px;
+    outline: none;
+    border: .1px solid #8a8a8a;
+    color: #8a8a8a;
+    margin: 0 4px;
+    text-align: center;
+}
+
+.card__info-quantity span i {
+    padding: 10px;
+    border: .1px solid #8a8a8a;
+    color: #8a8a8a;
+}
+
+.card__info-quantity span i:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    color: #c8c8c8;
+    border: 0.1px solid #515151;
+    background-color: #515151;
+}
+
+.button {
+    margin-top: 30px;
+    background-color: #ffbe0c;
+    padding: 30px 40px;
+    border: none;
+    outline: none;
+}
+
+.button:hover {
+    background-color: #292929;
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card__param {
+    width: 100%;
+    margin: 40px 0;
+}
+
+.card__param-item {
+    display: flex;
+}
+
+.card__param-item div {
+    padding: 0;
+}
+
+.card__param-item div h1 {
+    font-size: 12px;
+    padding: 14px 20px;
+    color: #ffbe0c;
+    background-color: #515151;
+    border-left: .1px solid #ffbe0c;
+    text-align: center;
+}
+
+.card__param-item div h1:hover {
+    color: #ffbe0c;
+    background-color: #292929;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card__param-info div {
+    display: none;
+}
+
+.card__param-info h1 {
+    font-size: 16px;
+}
+
+.card__param-info p {
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 30px;
+    padding-left: 20px;
+}
+
+.active {
+    display: block;
+}
+
+.card__other {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* KẾT THÚC PHẦN CARD */
+
+/* BẮT ĐẦU PHẦN BILL*/
+.bill__container {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.header__bill {
+    padding: 0 12px;
+}
+
+.header__bill div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 12px;
+    padding: 0 12px 10px 0;
+    border-bottom: .1px solid #515151;
+}
+
+.header__bill p {
+    margin: 0 10px;
+}
+
+table {
+    width: 100%;
+}
+
+.main__table h1 {
+    font-size: 20px;
+    color: #515151;
+    padding: 0 12px;
+}
+
+thead tr th,
+tfoot tr td {
+    background-color: #ededed;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #515151;
+}
+
+tr {
+    display: flex;
+}
+
+tbody tr {
+    border-bottom: .1px solid #8a8a8a;
+    padding: 10px 0;
+}
+
+tbody tr td img {
+    width: 100%;
+    object-fit: cover;
+}
+
+tbody tr td p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #292929;
+}
+
+tbody tr td p i:hover {
+    cursor: pointer;
+}
+
+tfoot tr td span p {
+    padding: 20px 0;
+    width: 200px;
+    background-color: #ffbe0c;
+    color: #515151;
+    text-align: center;
+}
+
+tfoot tr td span p:hover {
+    background-color: #515151;
+    color: #ffbe0c;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.main__pay {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 10px 0;
+}
+
+.pay__container {
+    width: 400px;
+    padding: 0 12px;
+}
+
+.pay__header {
+    border-bottom: .1px solid #8a8a8a;
+    padding-bottom: 10px;
+    color: #515151;
+}
+
+.pay__price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #515151;
+}
+
+.pay {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin-left: 188px;
+    display: block;
+}
+
+.pay span p {
+    background-color: #ffbe0c;
+    color: #292929;
+    padding: 20px 80px;
+}
+
+.pay span p:hover {
+    background-color: #515151;
+    color: #ffbe0c;
+    cursor: pointer;
+    transition: 0.3s;
+}
+/* KẾT THÚC PHẦN BILL*/
