@@ -118,6 +118,7 @@ body {
 .navbar__list {
     display: flex;
     margin: 0;
+    width: 100%;
 }
 
 .navbar__list li {
